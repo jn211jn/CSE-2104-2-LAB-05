@@ -16,25 +16,25 @@ package com.mycompany.person;
     private String Address;
     
      public static void main(String[] args) {
-        Person person1st = new Person("Mashrur", 26);
+        Person person1st=new Person("Mashrur", 26);
         person1st.display_Info();
         person1st.greet();
 
-        Person person2nd = new Person("shimi", 24, "Female", "shekertek");
+        Person person2nd=new Person("shimi", 24, "Female", "shekertek");
         person2nd.display_Info();
         person2nd.greet("Hope you are doing well:)");
     }
 
     public Person(String name, int age) {
-        this.Name = name;
-        this.Age = age;
-        this.Gender = "Unknown";
-        this.Address = "Unknown";
+        this.Name=name;
+        this.Age=age;
+        this.Gender="Unknown";
+        this.Address="Unknown";
     }  
     public Person(String name, int age, String gender, String address) {
         this(name, age);
-        this.Gender = gender;
-        this.Address = address;
+        this.Gender=gender;
+        this.Address=address;
     }
     public void display_Info() {
         System.out.println("Name: " + this.Name);
